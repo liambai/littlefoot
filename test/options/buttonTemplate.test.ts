@@ -11,7 +11,7 @@ test('default buttonTemplate', () => {
   littlefoot()
 
   const button = getButton('1')
-  expect(button.id).toBe('lf-fnref:1')
+  expect(button.id).toBe('fnref:1')
   expect(button.dataset).toMatchObject({
     footnoteButton: '',
     footnoteId: '1',
@@ -38,7 +38,7 @@ test('custom buttonTemplate using <%= %> delimiters', () => {
         </p>`,
     testId: '1',
     testNumber: '1',
-    testReference: 'lf-fnref:1',
+    testReference: 'fnref:1',
   })
 })
 
@@ -62,6 +62,6 @@ test('custom buttonTemplate using <% %> delimiters', () => {
         </p>`,
     testId: '1',
     testNumber: '1',
-    testReference: 'lf-fnref:1',
+    testReference: 'fnref:1',
   })
 })

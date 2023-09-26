@@ -140,7 +140,7 @@ function prepareTemplateData(original: Original, idx: number): OriginalData {
     data: {
       id: String(idx + 1),
       number: idx + 1,
-      reference: 'lf-' + original.referenceId,
+      reference: original.referenceId,
       content: html.startsWith('<') ? html : '<p>' + html + '</p>',
     },
   }
